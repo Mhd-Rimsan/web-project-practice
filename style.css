@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+
+}
+.mainpage{
+
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(images/kitchen.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.mainpage .top-blackbar{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+.conta-time{
+    display: flex;
+    color: white;
+    font-size: 15px;
+    padding-top: 6px;
+    padding-left: 50px;
+    text-align: center;
+    
+
+} 
+.conta-time .consult{
+    display: flex;
+    position: absolute;
+    width: 170px;
+    height:8px;
+    left: 75%;
+    border:black solid;
+    margin-bottom:1%;
+    padding-inline: 10px;
+
+
+}
+
+.consult:hover{
+    background-color: darkgoldenrod;
+}
+
+
+.navbar{
+    background-color: #32303085;
+    width: 100%;
+    height: 80px;
+}
+.nav{
+    display:flex;
+    
+    margin-left: 100vh;
+    max-width: fit-content;
+    height: 50px;
+    font-weight: bold;
+    gap: 50px;
+    padding-top: 20px;
+    
+
+
+}
+.navbar .nav a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 30px;
+    left: 25%;
+    position: relative;
+    align-items: center;
+}
+
+.nav a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background:darkgoldenrod ;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav a:hover::after{
+    width: 100%;
+}
+
+
+.company-logo{
+    display:flex;
+    position: relative;
+    
+}
+.logo{
+   text-decoration: none;
+   color: aliceblue;
+   font-size: 4vh;
+   text-align: center;
+   margin-left: 20px;
+   position: absolute;
+   font-family:fantasy;
+   top: 8%;
+   left:2%;
+   align-items: center;
+}
+
+.explore{
+    width:100%;
+    position: absolute;
+    color: antiquewhite;
+    top: 35%;
+    bottom: 50%;
+    text-align: center;
+    
+}
+
+.explore h4{
+    padding-bottom: 15px;
+    color:rgb(218, 169, 8) ;
+    font-size: 20px;
+}
+
+.explore h1,p,.button-container{
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+.explore .button-container{
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1{
+    padding: 15px 40px;
+    cursor: pointer;
+    border: solid 2px antiquewhite;
+    color: antiquewhite;
+    background-color: transparent;
+    
+}
+
+.button2{
+    padding: 15px 60px;
+    cursor: pointer;
+    border: solid 2px antiquewhite;
+    color:antiquewhite;
+    background-color: transparent;
+    
+}
+
+.button1:hover{
+    background-color:darkgoldenrod;
+}
+
+.button2:hover{
+    background-color:darkgoldenrod;
+    
+}
+
+.griding{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+
+
+}
+
+.grid-box1{
+    background-color: #323030;
+    flex: 1;
+    padding: 7%;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.grid-box2{ 
+    background-color:darkgoldenrod;
+    flex: 1;
+    padding: 7%;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+}
+.grid-box3{ 
+    background-color: #f4f4f4; 
+    color: #333; 
+    flex: 1;
+    padding: 7%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.num{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    padding-top: -10%;
+
+    
+}
+.sub-head{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.detail{
+    text-align: left;
+}
+.image-table{
+    max-width: 90%;
+    height: 450px;
+    position:relative;
+    left: 50%;
+    margin-top: 7%;
+    padding-bottom: 100px;
+
+
+}
+
+.left-text {
+    display: flex;
+    width: 35%;
+    height: 400px;
+    color: #333; 
+    padding:10%;
+    position:absolute;
+    justify-content: center;
+    flex-direction: column;
+    top: 155%;
+    left: -5%;
+}
+
+.left-text h4{
+    background-color: transparent;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    position:relative;
+    padding-top: 10px;
+    background-color: darkgoldenrod;
+    color: antiquewhite;
+
+    
+}
+
+.left-text h2{
+    padding-top: 8%;
+    font-size: 30px;
+}
+
+
+.bold-p{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left-text p{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left-text .see-btn{
+    border:4px solid rgb(155, 111, 0);
+    background-color: transparent;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    left: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.left-text .see-btn{
+    cursor: pointer;
+    border: solid 2px wheat;
+    color:black;
+    transition: 0.3s;
+}
+
+.see-btn:hover{
+    background-color:darkgoldenrod;
+}
