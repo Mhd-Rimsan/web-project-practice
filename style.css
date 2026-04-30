@@ -15,38 +15,45 @@
 }
 
 .mainpage .top-blackbar{
-    background-color: black;
+    
     width: 100%;
     height: 50px;
+    background-color: black;
 }
 
 .conta-time{
     display: flex;
-    color: white;
     font-size: 15px;
     padding-top: 6px;
     padding-left: 50px;
     text-align: center;
-    
-
+   
+ 
 } 
-.conta-time .consult{
-    display: flex;
+.conta-time p,button{
+    color: rgb(229, 177, 47);
+}
+.consult {
+    display: inline-flex;
     position: absolute;
     width: 170px;
-    height:8px;
+    height:30px;
     left: 75%;
-    border:black solid;
-    margin-bottom:1%;
-    padding-inline: 10px;
+    margin-top:.5em;
+    padding-left:17px ;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
 
 
 }
 
-.consult:hover{
+.conta-time .consult:hover{
     background-color: darkgoldenrod;
+    color: antiquewhite;
 }
-
 
 .navbar{
     background-color: #32303085;
@@ -140,19 +147,19 @@
 
 .button1{
     padding: 15px 40px;
-    cursor: pointer;
     border: solid 2px antiquewhite;
     color: antiquewhite;
     background-color: transparent;
+    transition: 0.3s ease-in-out;
     
 }
 
 .button2{
     padding: 15px 60px;
-    cursor: pointer;
     border: solid 2px antiquewhite;
     color:antiquewhite;
     background-color: transparent;
+    transition: 0.3s ease-in-out;
     
 }
 
@@ -170,6 +177,7 @@
     width: 100%;
     height: 400px;
     text-align: center;
+    
 
 
 }
@@ -200,6 +208,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.bottom-section{
+    background-color: rgb(243, 231, 217);
 }
 
 .num{
@@ -289,11 +301,105 @@
 
 .left-text .see-btn{
     cursor: pointer;
-    border: solid 2px wheat;
+    border: solid 2px rgb(201, 139, 23);
     color:black;
     transition: 0.3s;
 }
 
 .see-btn:hover{
     background-color:darkgoldenrod;
+    color: aliceblue;
 }
+
+                        /* second page */
+.nd-page{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(images/room.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.nd-starter{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+    margin-top:50px;
+    color: antiquewhite;
+   
+
+}
+h5{
+    display: inline;
+    border: darkgoldenrod solid 2px;
+    padding:6px;
+    line-height: 50px;
+}
+.grid-boxnd{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom:10%;
+    color: antiquewhite;
+    
+}
+.grid-1{
+    border: darkgoldenrod solid 1px;
+    display: inline-block;
+    padding: 7%;
+    width: 450px;
+    height: 400px;
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+.grid-2{
+    border:darkgoldenrod solid 1px;
+    padding: 7%;
+    width: 450px;
+    height: 400px;
+    margin: 1%;
+    box-sizing: border-box;
+
+}
+
+.grid-3{
+    border: darkgoldenrod solid 1px;
+    padding: 7%;
+    width: 450px;
+    height: 400px;
+    margin: 1%;
+    box-sizing: border-box;
+    
+}
+
+.grid-3 h2,.grid-1 h2 ,.grid-2 h2{
+    justify-content: left;
+    display: flex;
+    padding-top:40%;
+}
+
+.allservice button{
+    align-items: center;
+    background-color: transparent;
+    border-color:darkgoldenrod;
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    left: 46%;
+    padding: 10px;
+    color: antiquewhite;
+    transition: 0.3s ease-in-out;
+    
+
+}
+
+.allservice button:hover{
+    background-color: darkgoldenrod;
+    color: antiquewhite;
+}
+
+
